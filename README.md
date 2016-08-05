@@ -52,6 +52,22 @@ Running JSHint.
 Automatically including Bower dependencies as vendor.min.js and vendor.css.
 
 
+Object data:
+response.login
+.avatar_url (web address)
+.bio
+.blog
+.company
+.created_at (use moment to format time stamp)
+.followers
+.followers_url
+.following
+.hireable
+.html_url
+.name
+.organizations_url
+.public_repos
+.repos_url
 
 
 
