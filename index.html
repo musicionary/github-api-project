@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Github API Data</title>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
@@ -21,15 +22,44 @@
       </div>
     </nav>
 
-    <section id="user-data">
+    <div class="row">
+      <aside class="col s12 m4 l3">
+        <h4 class="center">Search For a User</h4>
+        <div class="container">
+          <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" name="user-name" id="user-name" class="validate">
+            <label for="user-name">Username:</label>
+          </div>
 
-    </section>
+          <button class='waves-effect waves-light btn' type="button" id="user-search">Octocat, Find User!</button>
+        </div>
+      </aside>
 
-    <aside>
-      <label for="user-name">Search For a User</label>
-      <input type="text" name="user-name" id="user-name">
+      <section id="user-data" class="col s12 m8 l9">
 
-      <button type="button" id="user-search">Go Find User, Octocat!</button>
-    </aside>
+      </section>
+
+      <section class="col s12 m8 l9 offset-m4 offset-l3">
+        <table id="repo-list" class="responsive-table highlight">
+          <thead>
+            <tr>
+                <th data-field='id'>Repository</th>
+                <th data-field='name'>Private</th>
+                <th data-field='price'>Creation Date</th>
+                <th data-field='price'>Number of Forks</th>
+                <th data-field='price'>Main Language</th>
+                <th data-field='price'>Clone Link</th>
+            </tr>
+          </thead>
+          <tbody id="repo-data">
+
+          </tbody>
+        </table>
+      </section>
+
+
+    </div>
+
   </body>
 </html>
