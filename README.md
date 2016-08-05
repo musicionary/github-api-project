@@ -12,7 +12,7 @@ Installation
 
 First clone the repository.  
 ```
-$ git clone https://github.com/musicionary/github-api.git
+$ git clone https://github.com/musicionary/github-api-project.git
 ```
 
 Install required npm packages:
