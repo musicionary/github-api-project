@@ -13,7 +13,7 @@ User.prototype.getUserInfo = function (userName, displayFunction) {
 
 User.prototype.getRepoInfo = function(userName, displayFunction) {
   $.get('https://api.github.com/users/' + userName + '/repos?access_token=' + apiKey).then(function (response) {
-    // console.log(response);
+    console.log(response);
     displayFunction(userName, response);
   }).fail(function(error){
     console.log(error.responseJSON.message);

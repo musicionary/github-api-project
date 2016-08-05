@@ -12,15 +12,15 @@
     <script type="text/javascript" src="build/js/app.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="blue lighten-1">
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo center">Octocat Data</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="#">Sass</a></li>
-        <li><a href="#">Components</a></li>
-      </ul>
       </div>
     </nav>
+
+    <header>
+      <h1 class="header center">Github User Information</h1>
+    </header>
 
     <div class="row">
       <aside class="col s12 m4 l3">
@@ -32,34 +32,30 @@
             <label for="user-name">Username:</label>
           </div>
 
-          <button class='waves-effect waves-light btn' type="button" id="user-search">Octocat, Find User!</button>
+          <button class='waves-effect waves-light btn teal lighten-2' type="button" id="user-search">Octocat, Find User!</button>
         </div>
       </aside>
 
-      <section id="user-data" class="col s12 m8 l9">
+      <section id="user-data" class="col s12 m8 l9"></section>
 
+      <section class="col s9 offset-s3 container">
+          <table id="repo-list" class="responsive-table highlight">
+            <thead>
+              <tr>
+                  <th data-field='name'>Repository</th>
+                  <th data-field='description' class="description">Description</th>
+                  <th data-field='private'>Private</th>
+                  <th data-field='date'>Creation Date</th>
+                  <th data-field='forks'>Number of Forks</th>
+                  <th data-field='language'>Main Language</th>
+                  <th data-field='clone-url'>Clone Link</th>
+              </tr>
+            </thead>
+            <tbody id="repo-data">
+
+            </tbody>
+          </table>
       </section>
-
-      <section class="col s12 m8 l9 offset-m4 offset-l3">
-        <table id="repo-list" class="responsive-table highlight">
-          <thead>
-            <tr>
-                <th data-field='id'>Repository</th>
-                <th data-field='name'>Private</th>
-                <th data-field='price'>Creation Date</th>
-                <th data-field='price'>Number of Forks</th>
-                <th data-field='price'>Main Language</th>
-                <th data-field='price'>Clone Link</th>
-            </tr>
-          </thead>
-          <tbody id="repo-data">
-
-          </tbody>
-        </table>
-      </section>
-
-
     </div>
-
   </body>
 </html>
