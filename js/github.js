@@ -8,3 +8,5 @@ User.prototype.getUserInfo = function (userName) {
     console.log(error.responseJSON.message);
   });
 };
+
+exports.userModule = User;
