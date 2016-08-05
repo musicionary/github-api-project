@@ -5,14 +5,14 @@ var displayUserStats = function (userName, userAvatar, userRealName, userFollowe
   $("#user-data").append(
     "<div class='row'>" +
       "<div class='col s12 m6'>" +
-        "<img class='responsive-img' src='" + userAvatar + "'/>" +
+        "<img class='responsive-img card hoverable' src='" + userAvatar + "'/>" +
       "</div>" +
-      "<div class='col s12 m6 card-panel teal lighten-2'>" +
+      "<div class='col s12 m6 card card-panel hoverable teal lighten-2'>" +
         "<h2 class='grey-text text-lighten-3'>" + userRealName + "</h2>" +
         "<p class='grey-text text-lighten-3'>" + userName + "</p>" +
         "<p class='grey-text text-lighten-3'>Followers: " + userFollowers + " Following: " + userFollowing + "</p>" +
         "<p class='grey-text text-lighten-3'>Bio: " + userBio + "</p>" +
-        "<p class='grey-text text-lighten-3'>Github User Since: " + userAccountDate + "</p>" +
+        "<p class='grey-text text-lighten-3 time-stamp'>Github User Since: " + userAccountDate + "</p>" +
         "<p class='grey-text text-lighten-3'>Number of repositories: " + userRepos + "</p>" +
       "</div>" +
     "</div>"
@@ -37,7 +37,7 @@ var displayRepoStats = function(userName, response) {
         "<td>" + name + "</td>" +
         "<td class='description'>" + description + "</td>" +
         "<td>" + isPrivate +"</td>" +
-        "<td>" + creation + "</td>" +
+        "<td class='time-stamp'>" + creation + "</td>" +
         "<td>" + forks + "</td>" +
         "<td>" + language + "</td>" +
         "<td><a class='waves-effect waves-light btn blue lighten-1' href='" + cloneUrl + "'>Clone Link</a></td>" +
