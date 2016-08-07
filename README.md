@@ -1,4 +1,4 @@
-# _Library App_ :lips:
+# _Github API App_ 
 
 ##### This application is a site that allows the user to access the Github api. I've been working on creating gulp tasks, bower tasks, and API calls via the Github API.  The user can search for Github users by username and see a list of the Github user's repositories.
 
